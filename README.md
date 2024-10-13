@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a banking application built using a **microservices architecture** with **Java Spring Boot**. The application provides essential banking features such as account management, transaction processing, and user authentication. It also ensures secure communication between services and fault tolerance using **Kafka** for messaging and **Resilience4j** for resiliency patterns.
+This is a banking application built using a **microservices architecture** with **Java Spring Boot**. The application provides essential banking features such as account management, transaction processing, and user authentication. It also ensures secure communication between services and fault tolerance using **Kafka** for messaging and **Resilience4j** for resiliency patterns. The entire application has been **containerized using Docker**, making it easy to deploy and manage across different environments.
 
 ## Features
 
@@ -38,11 +38,16 @@ This is a banking application built using a **microservices architecture** with 
    - Uses **PostgreSQL** as the primary relational database for user and account management.
    - Data persistence and retrieval are managed using **Spring Data JPA** and **Hibernate**.
 
+8. **Dockerized Application**:
+   - The entire application, including all microservices, has been containerized using **Docker**.
+   - Each service runs in its own **Docker container**, ensuring isolation and easy deployment.
+   - **Docker Compose** is used to orchestrate multiple containers for the database, Kafka, Keycloak, and microservices.
+
 ## Tech Stack
 
 ### Backend
-- **Java 11**
-- **Spring Boot 2**
+- **Java 17**
+- **Spring Boot 3**
   - **Spring Data JPA**: For database interactions.
   - **Spring Security**: For securing the microservices.
   - **Spring Cloud**: For building microservices architecture (Eureka for service discovery, Gateway for API gateway).
@@ -53,7 +58,10 @@ This is a banking application built using a **microservices architecture** with 
 - **PostgreSQL**: For managing user and account data.
 - **Hibernate**: For ORM (Object Relational Mapping).
 
-
+### Frontend
+- **Angular 14**: For a responsive frontend interface that communicates with the backend microservices.
+- **TypeScript**: Core language for frontend logic.
+- **HTML/CSS**: For designing the user interface.
 
 ## Architecture Overview
 
@@ -65,7 +73,7 @@ The application follows a **microservices architecture**, with separate services
 3. **Transaction Service**: Manages fund transfers between accounts, transaction history, and transaction validation.
 
 ### API Gateway:
-All microservices are accessible through an API gateway that routes requests to the appropriate service and handles load balancing.
+All microservices are accessible through an API gateway that routes requests to the appropriate service, handles load balancing, and applies security measures.
 
 ## Getting Started
 
