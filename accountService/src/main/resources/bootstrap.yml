@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: account-service
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://configserver:8081
+
+logging:
+  level:
+    com.myBank: debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+server:
+  port: 8072
