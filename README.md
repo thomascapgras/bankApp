@@ -65,7 +65,7 @@ The application follows a **microservices architecture**, with separate services
 3. **Transaction Service**: Manages fund transfers between accounts, transaction history, and transaction validation.
 
 ### API Gateway:
-All microservices are accessible through an API gateway that routes requests to the appropriate service, handles load balancing, and applies security measures.
+All microservices are accessible through an API gateway that routes requests to the appropriate service and handles load balancing.
 
 ## Getting Started
 
