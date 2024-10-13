@@ -42,7 +42,7 @@ This is a banking application built using a **microservices architecture** with 
 
 ### Backend
 - **Java 11**
-- **Spring Boot 3**
+- **Spring Boot 2**
   - **Spring Data JPA**: For database interactions.
   - **Spring Security**: For securing the microservices.
   - **Spring Cloud**: For building microservices architecture (Eureka for service discovery, Gateway for API gateway).
