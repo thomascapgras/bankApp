@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: transaction-service
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://configserver:8081
+
+logging:
+  level:
+    com.myBank: debug   # Your application's package logging level
+    org.keycloak: DEBUG  # Keycloak logging
+    org.keycloak.adapters: DEBUG  # Keycloak adapter logging for Spring Security
+    org.springframework.security: DEBUG  # Spring Security logs
+    org.springframework.web: DEBUG  # Spring Web logs (optional)
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+server:
+  port: 8073
