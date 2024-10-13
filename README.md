@@ -53,10 +53,7 @@ This is a banking application built using a **microservices architecture** with 
 - **PostgreSQL**: For managing user and account data.
 - **Hibernate**: For ORM (Object Relational Mapping).
 
-### Frontend
-- **Angular 14**: For a responsive frontend interface that communicates with the backend microservices.
-- **TypeScript**: Core language for frontend logic.
-- **HTML/CSS**: For designing the user interface.
+
 
 ## Architecture Overview
 
