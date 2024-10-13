@@ -41,7 +41,7 @@ This is a banking application built using a **microservices architecture** with 
 ## Tech Stack
 
 ### Backend
-- **Java 17**
+- **Java 11**
 - **Spring Boot 3**
   - **Spring Data JPA**: For database interactions.
   - **Spring Security**: For securing the microservices.
